@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: auto;
+    gap: 2rem;
+    padding: 4rem;
+  
+
+  $redes: (
+    linkedin: #0E76A8,
+    whatsapp: #25D366,
+  );
+
+  @each $redsocial, $colordered in $redes {
+    .fa-#{$redsocial} {
+      background-color: $colordered;
+      border-radius: 1rem;
+    }
+
+  }
+}

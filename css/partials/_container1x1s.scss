@@ -1,0 +1,27 @@
+.container-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+
+  .bloque-servicios, .bloque-texto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      box-sizing: border-box;
+      border-radius: 2rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .bloque-servicios, .bloque-texto {
+      flex: 1 0 100%;
+    }
+  }
+}

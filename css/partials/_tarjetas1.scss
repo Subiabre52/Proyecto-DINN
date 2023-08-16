@@ -1,0 +1,15 @@
+
+.container-tarjetas1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 1rem;
+  margin: 0 auto;
+
+  .card {
+      flex: 0 0 250px;
+      box-sizing: border-box;
+      grid-column: auto;
+  }
+}

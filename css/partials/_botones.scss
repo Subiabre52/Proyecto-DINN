@@ -1,0 +1,11 @@
+.btn.btn-primary {
+    -webkit-animation:shake-lr .7s steps(2,end) 2s both;
+    animation:shake-lr .7s steps(2,end) 2s both;
+    background-color: $mainColor;
+    border: none;
+
+    &:hover {
+        background-color: $secondaryColor;
+    }
+}
+ @-webkit-keyframes shake-lr{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}10%{-webkit-transform:rotate(8deg);transform:rotate(8deg)}20%,40%,60%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}30%,50%,70%{-webkit-transform:rotate(10deg);transform:rotate(10deg)}80%{-webkit-transform:rotate(-8deg);transform:rotate(-8deg)}90%{-webkit-transform:rotate(8deg);transform:rotate(8deg)}}@keyframes shake-lr{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}10%{-webkit-transform:rotate(8deg);transform:rotate(8deg)}20%,40%,60%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}30%,50%,70%{-webkit-transform:rotate(10deg);transform:rotate(10deg)}80%{-webkit-transform:rotate(-8deg);transform:rotate(-8deg)}90%{-webkit-transform:rotate(8deg);transform:rotate(8deg)}}

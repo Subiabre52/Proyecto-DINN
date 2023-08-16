@@ -1,0 +1,25 @@
+.container-servicio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloque-servicio {
+    flex: 1 0 250px;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5rem;
+    box-sizing: border-box;
+
+    img {
+        object-fit: contain;
+        box-sizing: border-box;
+        border-radius: 2rem;
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 1rem;
+    }
+
+    @media (max-width: 600px) {
+        flex: 1 0 100%;
+    }
+}

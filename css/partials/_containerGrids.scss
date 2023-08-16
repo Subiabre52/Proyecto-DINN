@@ -1,0 +1,40 @@
+.container-equipo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "img"    "txt"
+      "img"    "txt";
+    align-items: center;
+    padding: 2rem;
+  
+    img {
+      object-fit: contain;
+      box-sizing: border-box;
+      border-radius: 2rem;
+      width: 100%;
+      overflow: hidden;
+    }
+  
+    .img-grupo {
+      grid-area: img;
+      padding: 1rem;
+    }
+  
+    .parrafo-equipo {
+      grid-area: txt;
+      padding: 2rem;
+      text-align: center;
+      font-family:$mainFont;
+      font-size: x-large;
+      padding-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container-equipo {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "img"
+        "txt";
+    }
+  }

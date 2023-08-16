@@ -1,0 +1,27 @@
+.container-proposito {
+    display: flex;
+    flex-wrap: wrap;
+
+    .bloque-proposito {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            object-fit: contain;
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 1rem;
+            padding: 0.5rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .bloque-proposito {
+            flex: 1 0 100%;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  
+    .background-section {
+      flex-grow: 1;
+  
+      .background-container {
+        height: 100%;
+        background: url('./img/ImagenInicilal.png') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+  
+        .overlay-text, .overlay-text2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          font-size: xx-large;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          white-space: nowrap;
+          overflow: hidden;
+          border-right: .15em solid #fff;
+          width: 0;
+          backdrop-filter: blur(5px);
+          background-color: rgba(0, 0, 0, 0.5);
+          max-width: 800px;
+  
+          @media (max-width: 768px) {
+            font-size: x-large;
+            max-width: 600px;
+          }
+        }
+  
+        .overlay-text {
+          animation: typingEffect 6s steps(40, end) forwards, blink 0.5s step-end infinite alternate;
+        }
+  
+        .overlay-text2 {
+          top: calc(60% + 2em); // Mueve el segundo texto debajo del primero
+          animation: typingEffect 6s steps(40, end) 3s forwards, blink 0.5s step-end infinite alternate;
+        }
+      }
+    }
+  
+  @keyframes typingEffect {
+    0% {
+      width: 0;
+      white-space: nowrap;
+    }
+    99.9% {
+      white-space: nowrap;
+    }
+    100% {
+      width: 100%;
+      white-space: normal;
+    }
+  }
+  
+  @keyframes blink {
+    90% {
+      border-color: transparent;
+    }
+  }
+}

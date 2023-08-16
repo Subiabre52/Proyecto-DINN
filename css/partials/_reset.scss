@@ -1,0 +1,46 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+  
+    &::selection {
+      background-color: $secondaryColor;
+      color: $backgroundColor;
+    }
+  
+    .subtitulo {
+      text-align: center;
+    }
+  
+    .container-fluid {
+      display: flex;
+    }
+  
+    .logo-menu {
+      display: flex;
+      object-fit: contain;
+      width: 5rem;
+      height: 5rem;
+    }
+  
+    .titulo-seccion {
+      text-align: center;
+      padding: 2rem;
+      margin: 1rem;
+      color: $mainColor;
+      font-size: xx-large;
+      outline: auto;
+    }
+    .titulo-servicios{
+      color:$mainColor;
+      text-align: center;
+      padding: 1rem;
+    }
+    .nav-bar{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+  }
