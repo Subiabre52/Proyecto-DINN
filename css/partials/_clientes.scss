@@ -1,0 +1,44 @@
+
+// Animación de palpitación
+@keyframes palpitar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    .titulo-seccion, .titulo-servicios {
+        color: $mainColor;
+        margin: 20px 0;
+    }
+
+    img {
+        width: auto;
+        max-width: 100%;
+        margin: 20px 0;
+        animation: palpitar 2s infinite;
+    }
+
+    .parrafo-equipo {
+        margin: 10px 0;
+        max-width: 800px;
+    }
+
+    span {
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .parrafo-equipo {
+            max-width: 90%;
+        }
+    }
+}

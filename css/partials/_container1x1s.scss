@@ -6,6 +6,7 @@
   .bloque-servicios, .bloque-texto {
     flex: 1;
     display: flex;
+    flex-direction: column;  // Añadido para asegurarse de que los elementos internos estén dispuestos en columna
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -17,6 +18,12 @@
       box-sizing: border-box;
       border-radius: 2rem;
     }
+  }
+
+  .titulo-servicios {
+    color: $mainColor;
+    text-align: center;
+    padding: 1rem;
   }
 
   @media (max-width: 600px) {

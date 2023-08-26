@@ -91,6 +91,7 @@
 .container-servicios .bloque-servicios, .container-servicios .bloque-texto {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
@@ -102,6 +103,11 @@
   max-width: 100%;
   box-sizing: border-box;
   border-radius: 2rem;
+}
+.container-servicios .titulo-servicios {
+  color: #FF573C;
+  text-align: center;
+  padding: 1rem;
 }
 @media (max-width: 600px) {
   .container-servicios .bloque-servicios, .container-servicios .bloque-texto {
@@ -197,6 +203,7 @@ footer .fa-whatsapp {
 form {
   padding: 5rem;
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 .container-tarjetas1 {
@@ -260,6 +267,7 @@ form {
 }
 .main-container .background-section .background-container {
   height: 100%;
+  width: 100%;
   background: url("./img/ImagenInicilal.png") no-repeat center center;
   background-size: cover;
   display: flex;
@@ -296,6 +304,9 @@ form {
 .main-container .background-section .background-container .overlay-text2 {
   top: calc(60% + 2em);
   animation: typingEffect 6s steps(40, end) 3s forwards, blink 0.5s step-end infinite alternate;
+}
+.main-container .imagen-de-fondo {
+  width: 100%;
 }
 @keyframes typingEffect {
   0% {
@@ -340,5 +351,42 @@ form {
 @media (max-width: 600px) {
   .bloque-servicio {
     flex: 1 0 100%;
+  }
+}
+
+@keyframes palpitar {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.clientes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.clientes .titulo-seccion, .clientes .titulo-servicios {
+  color: #FF573C;
+  margin: 20px 0;
+}
+.clientes img {
+  width: auto;
+  max-width: 100%;
+  margin: 20px 0;
+  animation: palpitar 2s infinite;
+}
+.clientes .parrafo-equipo {
+  margin: 10px 0;
+  max-width: 800px;
+}
+.clientes span {
+  display: block;
+}
+@media (max-width: 768px) {
+  .clientes .parrafo-equipo {
+    max-width: 90%;
   }
 }/*# sourceMappingURL=estilo.css.map */
